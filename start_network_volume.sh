@@ -23,7 +23,6 @@ if [ -d "/runpod-volume/text-generation-webui/models/${MODEL}" ]; then
     --listen \
     --api \
     --model ${MODEL} \
-    --loader exllama \
     --listen-port 3000 \
     --api-blocking-port 5000 \
     --trust-remote-code \
