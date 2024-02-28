@@ -23,7 +23,7 @@ if [ -d "/runpod-volume/text-generation-webui/models/${MODEL}" ]; then
     --listen \
     --api \
     --model ${MODEL} \
-    --loader exllama \
+    --loader exllamav2_hf \
     --listen-port 3000 \
     --api-blocking-port 5000 \
     --api-streaming-port 5005 &> /runpod-volume/logs/textgen.log &
