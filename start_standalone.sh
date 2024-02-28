@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 if [ -z "${MODEL+x}" ]; then
-  MODEL="TheBloke/Synthia-34B-v1.2-GPTQ"
+  MODEL="LoneStriker/Air-Striker-Mixtral-8x7B-Instruct-ZLoss-3.75bpw-h6-exl2"
 fi
 
 # Replace slashes with underscores

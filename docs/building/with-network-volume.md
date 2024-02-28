@@ -31,7 +31,7 @@ chmod +x install.sh
 
 ```bash
 cd /workspace
-git clone https://github.com/oobabooga/text-generation-webui.git
+git clone https://github.com/oobabooga/text-generation-webui.git --branch snapshot-2023-10-29
 cd text-generation-webui
 git checkout 2af7e382b121f2eae16dd1f7ace621d31028b319
 python3 -m venv /workspace/venv
@@ -45,20 +45,26 @@ cd repositories
 git clone https://github.com/turboderp/exllama
 pip3 install -r exllama/requirements.txt
 ```
+
 7. Install the Serverless dependencies:
+
 ```bash
 pip3 install huggingface_hub runpod
 ```
-8. Download a model, for example `TheBloke/Synthia-34B-v1.2-GPTQ`:
+
+8. Download a model, for example `LoneStriker/Air-Striker-Mixtral-8x7B-Instruct-ZLoss-3.75bpw-h6-exl2`:
+
 ```bash
 cd /workspace/text-generation-webui
-python3 download-model.py TheBloke/Synthia-34B-v1.2-GPTQ \
+python3 download-model.py LoneStriker/Air-Striker-Mixtral-8x7B-Instruct-ZLoss-3.75bpw-h6-exl2 \
   --output /workspace/text-generation-webui/models
 ```
+
 9. Everything should now be installed on your Network Volume and it
    should be safe to terminate the pod.
 10. Sign up for a Docker hub account if you don't already have one.
 11. Build the Docker image on your local machine and push to Docker hub:
+
 ```bash
 docker build -t dockerhub-username/runpod-worker-oobabooga:1.0.0 -f Dockerfile.Network_Volume .
 docker login

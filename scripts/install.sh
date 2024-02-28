@@ -2,7 +2,7 @@
 
 COMMIT="2af7e382b121f2eae16dd1f7ace621d31028b319"
 TORCH_VERSION="2.1.2"
-MODEL="TheBloke/Synthia-34B-v1.2-GPTQ"
+MODEL="LoneStriker/Air-Striker-Mixtral-8x7B-Instruct-ZLoss-3.75bpw-h6-exl2"
 
 echo "Deleting Oobabooga Text Generation Web UI"
 rm -rf /workspace/text-generation-webui
@@ -12,7 +12,7 @@ rm -rf /workspace/venv
 
 echo "Cloning Oobabooga Text Generation Web UI repo to /workspace"
 cd /workspace
-git clone https://github.com/oobabooga/text-generation-webui.git
+git clone https://github.com/oobabooga/text-generation-webui.git --branch snapshot-2023-10-29
 cd text-generation-webui
 git checkout ${COMMIT}
 

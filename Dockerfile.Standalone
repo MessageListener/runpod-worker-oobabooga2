@@ -1,7 +1,7 @@
 FROM nvidia/cuda:12.1.1-cudnn8-devel-ubuntu22.04
 
 ARG OOBABOOGA_COMMIT=2af7e382b121f2eae16dd1f7ace621d31028b319
-ARG MODEL="TheBloke/Synthia-34B-v1.2-GPTQ"
+ARG MODEL="LoneStriker/Air-Striker-Mixtral-8x7B-Instruct-ZLoss-3.75bpw-h6-exl2"
 
 ENV DEBIAN_FRONTEND=noninteractive \
     PIP_PREFER_BINARY=1 \
@@ -13,10 +13,10 @@ SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 RUN apt update && \
     apt upgrade -y && \
     apt install -y \
-      python3-dev \
-      python3-pip \
-      git \
-      git-lfs && \
+    python3-dev \
+    python3-pip \
+    git \
+    git-lfs && \
     apt autoremove -y && \
     rm -rf /var/lib/apt/lists/* && \
     apt clean -y
