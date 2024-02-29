@@ -33,6 +33,7 @@ chmod +x install.sh
 cd /workspace
 git clone https://github.com/oobabooga/text-generation-webui.git --branch snapshot-2023-10-29
 cd text-generation-webui
+git checkout 2af7e382b121f2eae16dd1f7ace621d31028b319
 python3 -m venv /workspace/venv
 source /workspace/venv/bin/activate
 pip3 install --no-cache-dir torch==2.1.2 torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121

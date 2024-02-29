@@ -23,9 +23,10 @@ if [ -d "/runpod-volume/text-generation-webui/models/${MODEL}" ]; then
     --listen \
     --api \
     --model ${MODEL} \
+    --loader ExLlamav2_HF \
+    --trust-remote-code \
     --listen-port 3000 \
     --api-blocking-port 5000 \
-    --trust-remote-code \
     --api-streaming-port 5005 &> /runpod-volume/logs/textgen.log &
 
   echo "Starting RunPod Handler"

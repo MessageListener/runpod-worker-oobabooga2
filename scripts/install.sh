@@ -12,8 +12,9 @@ rm -rf /workspace/venv
 
 echo "Cloning Oobabooga Text Generation Web UI repo to /workspace"
 cd /workspace
-git clone https://github.com/oobabooga/text-generation-webui.git --branch snapshot-2023-10-29
+git clone https://github.com/oobabooga/text-generation-webui.git
 cd text-generation-webui
+git checkout ${COMMIT}
 
 echo "Installing Ubuntu updates"
 apt update
