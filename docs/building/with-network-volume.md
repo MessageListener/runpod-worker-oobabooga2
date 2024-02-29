@@ -31,7 +31,7 @@ chmod +x install.sh
 
 ```bash
 cd /workspace
-git clone https://github.com/oobabooga/text-generation-webui.git --branch snapshot-2023-10-29
+git clone https://github.com/oobabooga/text-generation-webui.git
 cd text-generation-webui
 git checkout 2af7e382b121f2eae16dd1f7ace621d31028b319
 python3 -m venv /workspace/venv
