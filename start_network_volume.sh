@@ -23,7 +23,7 @@ if [ -d "/runpod-volume/text-generation-webui/models/${MODEL}" ]; then
     --listen \
     --api \
     --model ${MODEL} \
-    --loader ExLlamav2_HF \
+    --loader ExLlamav2 \
     --extensions openai \
     --trust-remote-code &> /runpod-volume/logs/textgen.log &
 
