@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 COMMIT="2af7e382b121f2eae16dd1f7ace621d31028b319"
-TORCH_VERSION="2.1.2"
+TORCH_VERSION="2.2.0"
 MODEL="LoneStriker/Air-Striker-Mixtral-8x7B-Instruct-ZLoss-3.75bpw-h6-exl2"
 
 echo "Deleting Oobabooga Text Generation Web UI"
@@ -42,6 +42,7 @@ git clone https://github.com/turboderp/exllama
 pip3 install -r exllama/requirements.txt
 !pip3 install flash-attn==2.3
 !pip3 install xformers==0.0.21
+
 !pip3 uninstall -y exllamav2
 !pip3 install exllamav2
 
