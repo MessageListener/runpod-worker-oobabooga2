@@ -40,10 +40,10 @@ mkdir -p repositories
 cd repositories
 git clone https://github.com/turboderp/exllama
 pip3 install -r exllama/requirements.txt
-pip3 install flash_attn transformers -U
 
 pip3 uninstall -y exllamav2
 pip3 install https://github.com/turboderp/exllamav2/releases/download/0.0.13.post2/exllamav2-0.0.13.post2+cu121-cp311-cp311-linux_x86_64.whl
+pip3 install flash_attn transformers -U
 
 echo "Installing RunPod Serverless dependencies"
 cd /workspace/text-generation-webui
