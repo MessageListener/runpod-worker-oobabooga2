@@ -46,7 +46,7 @@ pip3 install exllamav2==0.0.13
 pip3 install flash-attn==2.3
 pip3 install xformers==0.0.21
 
-echo "Installing RunPod Serverless dependencies"
+echo "Installwo ing RunPod Serverless dependencies"
 cd /workspace/text-generation-webui
 pip3 install huggingface_hub runpod
 
