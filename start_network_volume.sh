@@ -2,7 +2,7 @@
 
 # Set default model if its not set in the environment variable
 if [ -z "${MODEL+x}" ]; then
-  MODEL="LoneStriker/Air-Striker-Mixtral-8x7B-Instruct-ZLoss-3.75bpw-h6-exl2"
+  MODEL="cloudyu/Mixtral_34Bx2_MoE_60B"
 fi
 
 # Replace slashes with underscores
