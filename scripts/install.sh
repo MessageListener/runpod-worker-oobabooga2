@@ -2,7 +2,7 @@
 
 COMMIT="2af7e382b121f2eae16dd1f7ace621d31028b319"
 TORCH_VERSION="2.2.0"
-MODEL="LoneStriker/Air-Striker-Mixtral-8x7B-Instruct-ZLoss-3.75bpw-h6-exl2"
+MODEL="cloudyu/Mixtral_34Bx2_MoE_60B"
 
 echo "Deleting Oobabooga Text Generation Web UI"
 rm -rf /workspace/text-generation-webui
